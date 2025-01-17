@@ -7,9 +7,4 @@ db.sqlite3
 .venv
 .env
 
-# React
-node_modules/
-build/
-.env
-.DS_Store
 
