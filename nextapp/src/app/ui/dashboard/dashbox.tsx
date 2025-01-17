@@ -1,18 +1,16 @@
 
-
 interface DashboxProps {
-    textContent: {
-        title: string;
-    };
+    title: string;
+    children: React.ReactNode;
 }
 
-export default function Dashbox({textContent}: DashboxProps) {
+
+export default function Dashbox({title, children}: DashboxProps){
     return (
         <div className="w-full">
-            <h3 className="p-1 text-md font-semibold">{textContent.title}</h3>
-            <div className="p-6 bg-gray-500 rounded-xl shadow-md">
-                
-                <p className=" text-foreground">10,000</p>
+            <h3 className="p-1 text-md font-semibold">{title}</h3>
+            <div className="p-6 bg-gray-500 rounded-xl shadow-md text-[--forground]">
+                {children}
             </div>
         </div>
     );
