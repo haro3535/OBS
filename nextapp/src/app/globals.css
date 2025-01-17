@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --barground: #d1d5db;
+  --svg-fill-color: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #4b5563;
     --foreground: #ededed;
+    --barground: #1f2937;
+    --svg-fill-color: #ededed;
   }
 }
 
@@ -18,4 +22,9 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.svg-color {
+  fill: var(--svg-fill-color); 
+  stroke: var(--svg-stroke-color); 
 }

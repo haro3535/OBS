@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function Sidenav() {
@@ -21,6 +22,11 @@ export default function Sidenav() {
                     <a href="#" className="flex items-center w-full h-12 px-6 hover:bg-gray-700">
                         <span className="text-white">Settings</span>
                     </a>
+                </li>
+                <li className="w-full">
+                    <Link href="/dashboard/messages" className="flex items-center w-full h-12 px-6 hover:bg-gray-700">
+                        <span className="text-white">Messages</span>
+                    </Link>
                 </li>
             </ul>
         </nav>
