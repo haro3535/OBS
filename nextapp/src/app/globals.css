@@ -6,7 +6,9 @@
   --background: #ffffff;
   --foreground: #171717;
   --barground: #d1d5db;
+  --barground-hover: #e3e7eb;
   --svg-fill-color: #171717;
+  --textcolor: #000000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,7 +16,9 @@
     --background: #4b5563;
     --foreground: #ededed;
     --barground: #1f2937;
+    --barground-hover: #374151;
     --svg-fill-color: #ededed;
+    --textcolor: #dee1e7;
   }
 }
 
